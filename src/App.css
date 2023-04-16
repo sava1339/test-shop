@@ -1,0 +1,54 @@
+.main{
+    min-height: 100vh;
+    margin: auto;
+    max-width: 1920px;
+}
+.filter{
+    width: 25%;
+}
+.products{
+    width: 75%;
+}
+.shop{
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.left-basket{
+    width: 66%;
+}
+.right-basket{
+    width: 33%;
+}
+@media screen and (max-width: 1020px) {
+
+    .filter{
+        width: 100%;
+    }
+    .products{
+        width: 100%;
+    }
+    .shop{
+        flex-direction: column;
+    }
+    .left-basket{
+        width: 100%;
+    }
+    .basket{
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+    }
+    .right-basket{
+        width: 100%;
+    }
+    .right-basket div{
+        margin: auto;
+    }
+}
+@media screen and (max-width: 748px) {
+    #basket{
+        width: 1.5rem;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+}
